@@ -1,0 +1,44 @@
+github
+dianabohorquez1@hotmail.com
+Diana2018*
+
+git push link rama
+
+git status 
+git log
+
+
+git add -p
+ muestra todos los archivos a los que se le ha realizado cambios y así se puede discriminar que se requiere "commitear"
+ luego de esto se hace commit
+git commit -m "mensaje de descripción2
+ el mensaje se hace en presente y por lo general no debe ser largo
+
+git status
+  ahora debe mostrar nothing to commit
+
+
+carpeta, proyecto, repositorio
+
+
+PARA AGREGAR REPOSITORIO
+
+copiar el link
+git status
+git remote add origin link
+git remote -v  (permite ver con que repositorio se encuentra vinculada la carpeta en la que estoy)
+git push origin master (el origin indica el nombre del remoto - envío al repositorio lo que tengo en la rama master)
+  si el destino y el origen tienen diferencia e orden (fecha- cambios entre los archivos) 
+  si se esta seguro de lo que se esta haciendo entonces se puede forzar con git push origin -f
+  si no entonces se copia lo del remoto en el local 
+    Hay dos formas de traer el remoto al local
+     1ro git pull (1ro. es fetch, 2do hace merge)
+	hace un commit con el dosnde quedan los cambios de fetch y merge
+     2do git fetch + git rebase (reescribir la historia)
+	 lo que se va a rebasar en github, haciendo que quede primero que lo que se tiene
+	 es decir, cuendo me rebaso de la rama a la que voy a hacer actualización, los commit de dicha rama quedan delante de los mios
+	 1ro en local -0-1 en remoto -2
+	 2do en local -2-0-1
+	https://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase
+Ahora después de haber tomado alguno de estos caminos entonces se hace
+git push origin master
